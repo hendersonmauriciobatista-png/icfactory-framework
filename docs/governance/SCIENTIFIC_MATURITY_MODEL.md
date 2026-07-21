@@ -311,6 +311,7 @@ Este registro documenta aplicações formais do modelo sem alterar as definiçõ
 |---|---|---|---|---|---|---|
 | 2026-07-20 | H-R03-01 — Envelope Custodial Portável em Camadas | Pesquisa (P) | **Experimental (E)** | GP-FW-03A | Experimentação controlada, fictícia, com chaves e identidades de teste; nenhum uso oficial | Custódia Metodológica — `CM-001` |
 | 2026-07-20 | PA-02 — Progressão de Valor | Experimental (E) | **Validado (V)** | GP-FW-03B | PROTEUS/CASE-01, corpus documental observado entre 2026-06-28 e 2026-07-20; sem universalidade ou efeito constitucional | Custódia Metodológica — `CM-001` |
+| 2026-07-20 | PA-03 — Materialização sob Necessidade | Experimental (E) | **Validado (V)** | GP-FW-03C | PROTEUS/CASE-01, corpus documental observado entre 2026-06-30 e 2026-07-20; sem universalidade ou efeito constitucional | Custódia Metodológica — `CM-001` |
 
 > H-R03-01 passa a integrar oficialmente o conjunto de conceitos experimentais do ICFACTORY, permanecendo sujeita à evolução, validação adicional, regressão ou futura promoção, conforme o Scientific Maturity Model.
 
@@ -319,3 +320,7 @@ A transição não institucionaliza o mecanismo, não valida a autenticidade cus
 > PA-02 passa oficialmente a integrar o conjunto de conceitos Validados do ICFACTORY, permanecendo elegível para futura promoção Constitucional conforme o Scientific Maturity Model.
 
 A validação de PA-02 é restrita ao PROTEUS/CASE-01. Não declara universalidade, não promove o conceito a Constitucional (C), não cria princípio e não autoriza ampliação por analogia. Evidências, limitações, condições de regressão e requisitos para futura avaliação V → C encontram-se em `GP_FW_03B_PA02_VALIDATION_GATE.md`.
+
+> PA-03 passa oficialmente a integrar o conjunto de conceitos Validados do ICFACTORY, no escopo explicitamente documentado, permanecendo elegível para futura promoção Constitucional conforme o Scientific Maturity Model.
+
+A validação de PA-03 é restrita ao PROTEUS/CASE-01 e a decisões documentadas de materialização sob necessidade operacional objetiva. Não declara universalidade, não proíbe materialização, não promove o conceito a Constitucional (C), não cria princípio e não autoriza ampliação por analogia. Evidências, limitações, condições de regressão e requisitos para futura avaliação V → C encontram-se em `GP_FW_03C_PA03_VALIDATION_GATE.md`.
