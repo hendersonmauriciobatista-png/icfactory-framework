@@ -993,3 +993,16 @@ Restricoes:
 * Nenhuma Discovery promovida automaticamente ao nucleo oficial.
 * Nenhuma alteracao constitucional realizada.
 * Promocoes futuras exigem programa especifico e verificacao de compatibilidade constitucional.
+
+# GP-FW-04 - Governance Baseline v1.0
+
+Status:
+**CONCLUIDA**
+
+Resultado:
+**APROVADA**
+
+Baseline Commit v1.0:
+`38152f16091dedae70d739a2911c88e140e742b0`
+
+A Governance Baseline v1.0 foi aprovada por revalidação após a conclusão da GP-FW-04A e da GP-FW-04B. O estado institucional oficial do ICFACTORY passa a ser reconstruível a partir do repositório `icfactory-framework`, preservando o HANDA_CORE como origem histórica e mantendo `research/authenticity_custody/poc/evidence/` fora da baseline institucional.

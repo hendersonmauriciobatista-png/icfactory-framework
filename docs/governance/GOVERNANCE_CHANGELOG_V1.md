@@ -1,8 +1,20 @@
 # ICFACTORY — Changelog de Governança do Primeiro Ciclo Científico
 
-Status: **REGISTRO HISTÓRICO CANDIDATO — BASELINE V1.0 NÃO APROVADA**
+Status: **REGISTRO HISTÓRICO E BASELINE APROVADA**
 
 Data de corte: 2026-07-20 (America/Sao_Paulo)
+Data da revalidação: 2026-07-20 (America/Sao_Paulo)
+Baseline Commit v1.0: 38152f16091dedae70d739a2911c88e140e742b0
+
+## 1A. Revalidação GP-FW-04 - Governance Baseline v1.0
+
+Resultado: **APROVADA**.
+
+A GP-FW-04 foi revalidada após a conclusão da GP-FW-04A e da GP-FW-04B. O commit `38152f16091dedae70d739a2911c88e140e742b0` passa a ser registrado como **Baseline Commit v1.0**.
+
+A reprovação histórica registrada na primeira execução permanece preservada e não é reescrita retroativamente. A aprovação decorre da superação dos bloqueios por reconciliação topológica, incorporação institucional, preservação de proveniência e consolidação da autoridade metodológica no repositório oficial `icfactory-framework`.
+
+O diretório `research/authenticity_custody/poc/evidence/` permanece fora da baseline institucional e não integra o escopo do congelamento.
 
 ## 1. Finalidade
 

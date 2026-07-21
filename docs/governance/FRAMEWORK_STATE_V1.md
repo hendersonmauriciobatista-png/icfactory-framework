@@ -1,38 +1,44 @@
 # ICFACTORY — Estado do Framework para a Baseline v1.0
 
-Status: **SNAPSHOT CANDIDATO — NÃO VIGENTE**
+Status: **ESTADO INSTITUCIONAL OFICIAL - GOVERNANCE BASELINE v1.0**
 
 Data de corte: 2026-07-20 (America/Sao_Paulo)
+Data de vigencia da baseline: 2026-07-20 (America/Sao_Paulo)
+Baseline Commit v1.0: 38152f16091dedae70d739a2911c88e140e742b0
 
 ## 1. Resumo
 
-Este documento representa o estado reconstruído no encerramento técnico do Primeiro Ciclo Científico. Ele não é uma declaração de vigência da Baseline v1.0, pois a GP-FW-04 encontrou conflitos de registro e lacunas de versionamento.
+Este documento registra o estado institucional oficial do ICFACTORY apos a revalidacao aprovada da GP-FW-04. A Governance Baseline v1.0 e reconstruivel a partir do repositorio oficial `icfactory-framework`, tendo como Baseline Commit v1.0 o hash `38152f16091dedae70d739a2911c88e140e742b0`.
 
 | Dimensão | Estado observado |
 |---|---|
-| Constituição | versão 0.2, ATIVA, na autoridade `C:\HANDA_CORE\ICFACTORY` |
-| Léxico Constitucional | vigente na mesma autoridade |
+| Constituicao | versao 0.2, ATIVA, incorporada e rastreada no repositorio oficial `icfactory-framework` |
+| Lexico Constitucional | vigente, incorporado e rastreado no repositorio oficial |
 | Modelo P/E/V/C | ratificado; arquivo rastreado no repositório novo |
-| Knowledge Evolution Lifecycle | ratificado, porém não rastreado |
-| Custódia Metodológica | ratificada, porém seus documentos centrais não são rastreados |
-| Custodiante | `CM-001`, Henderson Mauricio Batista, vigente no registro local não rastreado |
+| Knowledge Evolution Lifecycle | ratificado, rastreado e integrante da baseline oficial |
+| Custodia Metodologica | ratificada, rastreada e integrante da baseline oficial |
+| Custodiante | `CM-001`, Henderson Mauricio Batista, vigente e rastreado no repositorio oficial |
 | Gates do ciclo | quatro aprovados e commitados localmente |
-| Publicação | `main` local quatro commits à frente de `origin/main` |
-| Baseline v1.0 | não aprovada |
+| Publicação | nenhum push executado nesta GP; baseline registrada localmente |
+| Baseline v1.0 | aprovada como Governance Baseline v1.0 |
+
+## 1A. Autoridade institucional oficial
+
+O repositorio `icfactory-framework` constitui a autoridade metodologica oficial do ICFACTORY para a Governance Baseline v1.0. O HANDA_CORE permanece preservado como origem historica, sem dependencia operacional para reconstrucao institucional da baseline.
 
 ## 2. Autoridades e versões
 
 ### Autoridade constitucional
 
-- repositório: `C:\HANDA_CORE`;
-- HEAD e `origin/principal`: `95f23628319a969e1d89c3a89466d8533fb09140`;
+- origem historica preservada: `C:\HANDA_CORE`;
+- commit historico de referencia: `95f23628319a969e1d89c3a89466d8533fb09140`;
 - Constituição SHA-256: `1E9A6CB132E4D209B2F784F5C26E0030DF7C65F433CDB102029884905D347A56`;
 - Léxico SHA-256: `73C39120D4F283CC24801F2F33A93FD01C72187400FDF7ACC3560C2DD0142C0C`.
 
 ### Governança científica
 
 - repositório: `C:\Users\Guiuliano\icfactory-framework`;
-- HEAD: `10e3f72417d491d295721277ba89b72fcae5c2b5`;
+- HEAD baseline: `38152f16091dedae70d739a2911c88e140e742b0`;
 - `origin/main`: `f799ca9b3c66e118b12584424ecbc2010f1c009f`;
 - Scientific Maturity Model SHA-256: `9229F99955653141C777E6253F3FFA7D6175FEB4E5ED396B41BDC1CA5E0CA8D4`;
 - Concept Promotion Matrix SHA-256: `5CF0EC110CC2AF3A8974B4897358F915F23817CF4B0909DA6A432644B6102A91`.
@@ -147,9 +153,9 @@ PA-02, PA-03 e GDC-R necessitam comprovação multidomínio, estabilidade longit
 ## 8. Estado institucional final desta execução
 
 - consistência metodológica conceitual: **parcialmente demonstrada**;
-- consistência dos registros: **não demonstrada**;
-- integridade da configuração: **insuficiente para congelamento**;
+- consistência dos registros: **demonstrada na revalidação**;
+- integridade da configuração: **suficiente para congelamento da Governance Baseline v1.0**;
 - promoções GP-FW-03A…03D: **documentadas localmente**;
-- estabilização oficial v1.0: **não declarada**.
+- estabilização oficial v1.0: **declarada nesta revalidação**.
 
-Este snapshot deverá ser substituído por uma versão vigente somente após a reconciliação documental e uma nova aprovação formal de baseline.
+Este estado passa a constituir a Governance Baseline v1.0 vigente do ICFACTORY, preservando a primeira reprovação da GP-FW-04 como registro historico.

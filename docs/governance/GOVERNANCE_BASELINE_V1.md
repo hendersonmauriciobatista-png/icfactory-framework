@@ -1,10 +1,49 @@
 # GP-FW-04 — Baseline de Governança v1.0
 
-Status: **BASELINE NÃO APROVADA — CONGELAMENTO INSTITUCIONAL BLOQUEADO**
+Status: **BASELINE APROVADA - GOVERNANCE BASELINE v1.0 VIGENTE**
 
-Data da auditoria: 2026-07-20 (America/Sao_Paulo)
+Data da auditoria original: 2026-07-20 (America/Sao_Paulo)
+Data da revalidação: 2026-07-20 (America/Sao_Paulo)
+Baseline Commit v1.0: 38152f16091dedae70d739a2911c88e140e742b0
 
 Natureza: inventário documental passivo; nenhum conceito, princípio, documento constitucional, pesquisa ou maturidade foi alterado.
+
+## 0. Revalidação GP-FW-04 - Governance Baseline v1.0
+
+Resultado da revalidação: **APROVADA**.
+
+A revalidação da GP-FW-04 foi executada após a conclusão da GP-FW-04A e da GP-FW-04B. O commit `38152f16091dedae70d739a2911c88e140e742b0` passa a constituir o **Baseline Commit v1.0** da Governance Baseline v1.0 do ICFACTORY.
+
+A primeira execução da GP-FW-04 permanece preservada neste documento como registro histórico de reprovação institucional. A aprovação atual não reescreve retroativamente a reprovação original; ela registra a superação dos bloqueios por meio da reconciliação topológica e da incorporação institucional do núcleo constitucional.
+
+### 0.1 Respostas objetivas da revalidação
+
+| Verificação obrigatória | Resultado |
+|---|---|
+| O framework pode ser reconstruído apenas a partir do repositório oficial? | Sim. |
+| Existe alguma dependência operacional do HANDA_CORE? | Não. O HANDA_CORE permanece apenas como origem histórica preservada. |
+| Existe documento obrigatório ausente? | Não. |
+| Existe documento obrigatório apenas em working tree? | Não. |
+| Existem documentos essenciais fora do histórico Git? | Não, exceto material explicitamente classificado como fora da baseline institucional. |
+| Existem conflitos de autoridade? | Não bloqueantes após a GP-FW-04B. |
+| Existe conflito constitucional? | Não identificado. |
+| A proveniência foi preservada? | Sim, por manifesto e inventário. |
+| Os manifestos são suficientes? | Sim para reconstrução institucional da Baseline v1.0. |
+| O estado institucional é único? | Sim. |
+| O estado institucional é íntegro? | Sim. |
+| O estado institucional é reproduzível? | Sim. |
+| O commit 38152f16091dedae70d739a2911c88e140e742b0 representa uma baseline consistente? | Sim. |
+| Existe algum bloqueio para congelamento da Baseline v1.0? | Não. |
+
+### 0.2 Escopo explicitamente fora da baseline
+
+O diretório `research/authenticity_custody/poc/evidence/` permanece corretamente fora da baseline institucional. Sua exclusão não constitui bloqueio, pois o diretório não integra o núcleo institucional aprovado da Governance Baseline v1.0.
+
+### 0.3 Declaração formal
+
+A partir desta revalidação, a **Governance Baseline v1.0** passa a constituir o estado institucional oficial do ICFACTORY, tendo como baseline commit o hash `38152f16091dedae70d739a2911c88e140e742b0`.
+
+## 1. Primeira execução GP-FW-04 - registro histórico preservado
 
 ## 1. Decisão executiva
 

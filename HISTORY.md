@@ -2188,3 +2188,22 @@ Foi implantada oficialmente a camada Research do ICFACTORY como ambiente documen
 ### Veredito
 
 GP-R01 concluida. A camada Research esta institucionalizada documentalmente sem promocao indevida de Discoveries e sem alteracao constitucional.
+
+## 2026-07-20 - GP-FW-04 Revalidação Da Governance Baseline v1.0
+
+Resultado: **APROVADA**.
+
+A GP-FW-04 foi revalidada após a conclusão da GP-FW-04A e da GP-FW-04B. A revalidação confirmou que o estado institucional atual do ICFACTORY é único, íntegro e reproduzível a partir do repositório oficial `icfactory-framework`.
+
+Baseline Commit v1.0:
+`38152f16091dedae70d739a2911c88e140e742b0`
+
+A Governance Baseline v1.0 passa a constituir o estado institucional oficial do ICFACTORY. A primeira reprovação da GP-FW-04 permanece preservada como registro histórico e não foi reescrita retroativamente.
+
+Preservações obrigatórias:
+
+- o HANDA_CORE permanece como origem histórica do ICFACTORY;
+- não há dependência operacional do HANDA_CORE para reconstrução institucional da baseline;
+- Constituição, Léxico e conceitos não foram alterados nesta revalidação;
+- `research/authenticity_custody/poc/evidence/` permanece fora da baseline institucional;
+- nenhum push foi executado.
