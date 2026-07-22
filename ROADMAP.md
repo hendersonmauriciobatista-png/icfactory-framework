@@ -1006,3 +1006,54 @@ Baseline Commit v1.0:
 `38152f16091dedae70d739a2911c88e140e742b0`
 
 A Governance Baseline v1.0 foi aprovada por revalidação após a conclusão da GP-FW-04A e da GP-FW-04B. O estado institucional oficial do ICFACTORY passa a ser reconstruível a partir do repositório `icfactory-framework`, preservando o HANDA_CORE como origem histórica e mantendo `research/authenticity_custody/poc/evidence/` fora da baseline institucional.
+
+# GP-CON-01 — Arquitetura Institucional de IA e Agentes
+
+Status:
+**APROVADA SEM RESSALVAS — CONCLUÍDA E VIGENTE**
+
+Data:
+2026-07-21
+
+Objetivo:
+
+Institucionalizar a arquitetura independente de fornecedor que rege a relação entre Desenvolvedor, ICFACTORY, Agente, Contrato da IA, IA e Projeto.
+
+Entrega institucional aprovada:
+
+`docs/architecture/GP_CON_01_AI_AGENT_ARCHITECTURE.md`
+
+Resultado:
+
+- papéis e limites institucionais definidos;
+- interfaces e informações trafegadas documentadas;
+- léxico arquitetural oficial aprovado;
+- princípios de governança de Agente e IA institucionalizados;
+- substituição de Agentes e IAs prevista;
+- independência tecnológica e de fornecedor preservada;
+- requisitos de auditabilidade, portabilidade e continuidade estabelecidos.
+
+Restrições preservadas:
+
+- nenhuma alteração constitucional;
+- nenhuma alteração do Léxico Constitucional;
+- nenhuma alteração de código, implementação, Projeto ou Research;
+- nenhuma autoridade atribuída à IA;
+- nenhuma tecnologia ou fornecedor tornado obrigatório.
+
+Vigência institucional:
+
+**VIGENTE DESDE 2026-07-21.**
+
+A GP-CON-01 foi aprovada sem ressalvas após elaboração arquitetural, auditoria de pré-aprovação, parecer técnico, remediação GP-CON-01A e nova validação de integridade estrutural. A arquitetura passa a integrar oficialmente o patrimônio arquitetural permanente do ICFACTORY.
+
+Delimitação científica:
+
+A definição arquitetural de Agente não promove, substitui, altera, modifica a maturidade ou institucionaliza Harness como Executor Assistido sem Autoridade Própria, Especificação Estruturada de Execução ou Contexto de Execução governado. Esses conceitos permanecem submetidos ao ciclo científico próprio.
+
+Evoluções futuras possíveis, sem execução automática:
+
+- template portátil do Contrato da IA;
+- suíte de conformidade de adaptadores;
+- exemplo de handoff entre Agentes;
+- avaliação constitucional separada para eventual incorporação lexical.

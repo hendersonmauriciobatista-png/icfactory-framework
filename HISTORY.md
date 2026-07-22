@@ -2207,3 +2207,55 @@ Preservações obrigatórias:
 - Constituição, Léxico e conceitos não foram alterados nesta revalidação;
 - `research/authenticity_custody/poc/evidence/` permanece fora da baseline institucional;
 - nenhum push foi executado.
+
+## 2026-07-21 — GP-CON-01 — Arquitetura Institucional de IA e Agentes
+
+### Status
+
+**APROVADA SEM RESSALVAS — VIGENTE**
+
+### Contexto
+
+O ICFACTORY necessitava de uma arquitetura institucional explícita para integrar Desenvolvedor, Framework, Agente, Contrato da IA, IA e Projeto sem depender de tecnologia, modelo ou fornecedor específico.
+
+### Decisão Arquitetural
+
+Após elaboração, auditoria de pré-aprovação, parecer técnico, remediação GP-CON-01A e nova validação estrutural, foi aprovada sem ressalvas a arquitetura registrada em `docs/architecture/GP_CON_01_AI_AGENT_ARCHITECTURE.md`, com duas cadeias complementares:
+
+```text
+Desenvolvedor → ICFACTORY → Agente → Projeto
+Agente → Contrato da IA → IA
+```
+
+Foram definidos papéis, responsabilidades, limites, interfaces, informações trafegadas, requisitos de auditabilidade, regras de substituição e critérios de conformidade.
+
+### Princípios Institucionalizados
+
+- o ICFACTORY governa o Agente;
+- o Contrato da IA governa a IA;
+- a IA não governa o ICFACTORY;
+- o Projeto não governa o ICFACTORY;
+- Agentes e IAs são substituíveis;
+- o ICFACTORY permanece independente de fornecedor;
+- toda IA utilizada institucionalmente opera através do Contrato da IA.
+
+### Léxico Arquitetural
+
+Foram aprovadas definições arquiteturais oficiais e únicas para IA, Agente, Contrato da IA, Desenvolvedor, Projeto e Framework. Essas definições não alteram o Léxico Constitucional.
+
+### Delimitação Científica
+
+A definição arquitetural de Agente não promove, substitui, altera, modifica a maturidade ou institucionaliza os conceitos experimentais Harness como Executor Assistido sem Autoridade Própria, Especificação Estruturada de Execução e Contexto de Execução governado. Esses conceitos permanecem submetidos ao ciclo científico próprio do ICFACTORY.
+
+### Preservações
+
+- nenhuma implementação ou código-fonte foi alterado;
+- nenhum projeto governado, inclusive o PROTEUS, foi modificado;
+- nenhuma pesquisa em andamento foi alterada;
+- Constituição e Léxico Constitucional permaneceram inalterados;
+- nenhuma autoridade foi transferida para Agente ou IA;
+- nenhuma dependência de fornecedor foi incorporada ao framework.
+
+### Resultado
+
+A GP-CON-01 estabelece oficialmente uma camada permanente, auditável e independente de fornecedor para o uso de agentes e inteligências artificiais sob o ICFACTORY. A arquitetura entra em vigor em 2026-07-21 e passa a integrar o patrimônio arquitetural permanente do framework.
