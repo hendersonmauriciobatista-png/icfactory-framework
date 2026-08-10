@@ -99,3 +99,31 @@ This incorporation does not approve Baseline v1.0 and does not declare the First
 
 These provenance edits preserve all prior historical facts, do not rewrite commits, and explicitly document detected mismatches and normalization findings for Product Owner review and ratification.
 
+## Product Owner Deliberation — GP-FW-04B Phase 3
+
+Authority: PRODUCT_OWNER
+Decision: APPROVED_WITH_RECORDED_RESERVATIONS
+Date: 2026-08-09
+
+Deliberation summary:
+- README duplicate paths: ACCEPTED_AS_NON_BLOCKING. No content conflict; non-blocking reservation recorded.
+- governance/PROJECT_CONSTITUTION_TEMPLATE.md historical incorporation blob mismatch: ACCEPTED_AS_NON_BLOCKING_HISTORICAL_EVIDENCE. Historical divergence preserved in provenance; no rewrite authorized.
+
+Decision rules:
+- Preserve reservations as auditable historical evidence.
+- Do not rewrite Git history, modify constitutional content, modify governance templates, remove historical evidence, or perform unrelated corrections.
+- Do not push these local provenance records without explicit authorization.
+
+Baseline verification:
+- Baseline verified: YES
+- Worktree before writing: CLEAN
+
+Action taken:
+- Product Owner deliberation recorded in this manifest as the authoritative GP-FW-04B deliberation record. Only the minimum documentary record was modified.
+
+Commit instruction (local):
+Commit message: docs: ratify GP-FW-04B phase 3 with recorded reservations
+Push: NOT AUTHORIZED
+
+Note: This entry records Product Owner approval with recorded reservations. No constitutional or governance-template content was modified.
+
