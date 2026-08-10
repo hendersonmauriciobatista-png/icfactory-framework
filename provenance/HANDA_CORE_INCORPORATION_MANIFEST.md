@@ -86,3 +86,16 @@ This incorporation does not fabricate retroactive authority. It does not assign 
 ## Baseline Boundary
 
 This incorporation does not approve Baseline v1.0 and does not declare the First Scientific Cycle closed. GP-FW-04 remains historically recorded as not approving the governance baseline freeze.
+
+## Phase 3 Verification Notes
+
+- Phase 3 normalization verification (2026-08-09): controlled, in-memory normalization (UTF-8, remove BOM, Unicode NFC, LF endings) executed for incorporated artifacts and used as evidence for provenance reconciliation.
+
+- governance/PROJECT_CONSTITUTION_ALFA_DRAFT.md: raw-hash mismatch identified earlier was a FALSE_POSITIVE caused by line-ending normalization. Recorded as: NORMALIZED_CONTENT_EQUIVALENT; CONTENT_CORRECTION_NOT_REQUIRED; DRAFT status preserved. No authority promoted.
+
+- governance/PROJECT_CONSTITUTION_TEMPLATE.md: current HEAD content matches authoritative HANDA_CORE source after controlled normalization (A↔C normalized match). The incorporation commit blob (38152f16091dedae70d739a2911c88e140e742b0) contains a different payload (historical incorporation blob mismatch) which is preserved as historical evidence. Provenance correction performed in inventory to align recorded source_sha256 with authoritative source; CURRENT_CONTENT_CORRECTION_NOT_REQUIRED. Historical commit preserved and not rewritten.
+
+- CONSTITUTION.md: inventory source_sha256 corrected to match the verified authoritative HANDA_CORE source; CURRENT_CONTENT_MATCHES_AUTHORIZED_SOURCE recorded.
+
+These provenance edits preserve all prior historical facts, do not rewrite commits, and explicitly document detected mismatches and normalization findings for Product Owner review and ratification.
+
