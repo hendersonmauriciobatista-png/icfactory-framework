@@ -1,4 +1,4 @@
-﻿# ICFACTORY Document Map
+# ICFACTORY Document Map
 
 This document explains where to find the main ICFACTORY documents and when to read them.
 
@@ -86,6 +86,22 @@ Purpose: draft example of a Project Constitution.
 Read when: you need an example of template usage and understand that it is not approved for operational use.
 
 Do not treat it as an authoritative constitution for your project.
+
+### Product Owner Decision Governance Package
+
+`docs/governance/product_owner_decisions/README.md`
+
+Purpose: navigation entry for the accepted and promulgated Product Owner Decision Governance package.
+
+STATUS: ACCEPTED
+
+EFFECT: IN_FORCE
+
+VERSION: 1.0.0
+
+Read when: reviewing the current normative package, its modular schema, lifecycle, materiality controls, domain correctness, specialist-authority safeguards, human-participation provenance, derivation standard, proportional templates and declarative automation boundary.
+
+This package is the current in-force authority for Product Owner decision governance. Historical RC6 remains preserved as a failed review artifact; it is not current authority and was never accepted or promulgated.
 
 ## Concept Documents
 
