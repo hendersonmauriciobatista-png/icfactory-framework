@@ -10,7 +10,7 @@ effect: IN_FORCE
 
 ## 1. Purpose and scope
 
-This candidate defines a proportional and traceable governance standard for project-local Product Owner decisions. It applies prospectively to decisions created after an explicit project adoption of a future promulgated PO-GOV version.
+This policy defines a proportional and traceable governance standard for project-local Product Owner decisions. It applies prospectively to decisions created after an explicit project adoption of the promulgated `PO-GOV 1.0.0` package through the version-pinned derivation process.
 
 It governs decision records, not ordinary engineering activity. It does not replace the ICFACTORY Constitution, Constitutional Lexicon, Methodological Custody or the Project Constitution.
 
@@ -63,7 +63,7 @@ Before promulgation, a candidate record may evolve through Git history. After pr
 - the original promulgated file is not edited to simulate updated history;
 - promulgated content must be hash-verifiable after a future canonicalization standard is approved.
 
-Canonicalization is a prerequisite for future hashing. This candidate does not define an executable canonicalizer or calculate hashes.
+Canonicalization is a prerequisite for future hashing. This policy does not define an executable canonicalizer or calculate hashes.
 
 ## 6. Storage and evidence
 
@@ -108,4 +108,4 @@ Missing mandatory validation blocks only the affected scope. Specialist advice r
 
 ## 10. Status
 
-`ACCEPTED / IN_FORCE`. This text is not accepted or promulgated.
+`ACCEPTED / IN_FORCE`.
