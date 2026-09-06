@@ -12,7 +12,7 @@ effect: IN_FORCE
 
 ICFACTORY stores the PO-GOV standard. Each project stores its own Product Owner authority, registry, concrete decisions and evidence. Framework publication cannot mutate project governance.
 
-This release candidate is prohibited from project derivation until a future version is explicitly promulgated.
+The promulgated `PO-GOV 1.0.0` package is eligible for prospective project derivation only through the explicit, version-pinned adoption process defined by this standard. Framework promulgation alone creates no project-local adoption or operational effect.
 
 ## 2. Mandatory project-local structure
 
