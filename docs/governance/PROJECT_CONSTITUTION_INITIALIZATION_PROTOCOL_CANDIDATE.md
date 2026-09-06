@@ -1,8 +1,8 @@
 # ICFACTORY — PROJECT CONSTITUTION INITIALIZATION AND PROJECT AUTHORITY PROTOCOL
 
 **Identificação:** PCIP-01-CANDIDATE  
-**Revisão candidata:** 0.2  
-**Natureza:** Proposta normativa prospectiva para eliminar bootstrap recursivo, lacunas de autoridade interna e armadilhas de contexto em projetos ICFACTORY  
+**Revisão candidata:** 0.3  
+**Natureza:** Proposta normativa prospectiva para eliminar bootstrap recursivo, lacunas de autoridade interna, dependência nominal e armadilhas de contexto em projetos ICFACTORY  
 **Status:** CANDIDATE — NÃO VIGENTE — NÃO PROMULGADO  
 **Escopo:** Framework ICFACTORY; futuras Constituições iniciais e cadeia ordinária de autoridade interna dos projetos  
 
@@ -10,9 +10,9 @@
 
 O regime ordinário do `PROJECT_CONSTITUTION_TEMPLATE` exige autoridade de elaboração, validação constitucional, aprovação e custódia com competência e proveniência preexistentes. Quando aplicado à primeira Constituição de um projeto cuja governança ainda não foi constituída, esse requisito pode produzir regressão recursiva.
 
-Além disso, mesmo após a constituição inicial, um projeto pode voltar a travar se chegar a uma decisão material — arquitetura, implementação, migração, ativação, cutover, release, suspensão, rollback ou outra decisão interna nova — sem autoridade previamente identificada para decidir.
+Além disso, mesmo após a constituição inicial, um projeto pode voltar a travar se chegar a uma decisão material — arquitetura, implementação, migração, ativação, cutover, release, suspensão, rollback, delegação, sucessão ou outra decisão interna nova — sem autoridade previamente identificada para decidir.
 
-O ICFACTORY deve possuir uma solução permanente, geral, auditável e aplicável por terceiro sem depender de contexto oculto, memória conversacional ou inferência de autoridade.
+O ICFACTORY deve possuir uma solução permanente, geral, auditável e aplicável por terceiro sem depender de contexto oculto, memória conversacional, identidade pessoal fixa ou inferência de autoridade.
 
 ## 2. Princípio de solução
 
@@ -26,95 +26,116 @@ O Evento deve criar uma cadeia de governança de projeto suficientemente complet
 
 A governança operacional do projeto deve distinguir, no mínimo, três elementos:
 
-### 3.1 Autoridade Humana Soberana do Projeto — AHSP
+### 3.1 Autoridade Soberana do Projeto — ASP
 
-Pessoa humana identificada, regularmente designada, responsável pela decisão final sobre matérias internas do projeto que não estejam reservadas por autoridade superior, externa ou especializada aplicável.
+Função humana institucional do projeto, independente da pessoa que a ocupa, responsável pela decisão final sobre matérias internas que não estejam reservadas por autoridade superior, externa ou especializada aplicável.
 
-A AHSP é a autoridade interna de fechamento decisório do projeto.
+A ASP existe como **papel**, não como nome de pessoa.
+
+O titular inicial, sucessor, substituto, delegado ou ocupante temporário deve ser identificado por ato próprio, mas o protocolo não fecha a função em torno de qualquer indivíduo específico.
 
 ### 3.2 Inteligência de Governança — IG
 
-Função informativa exercida por IA, assistente, auditor, mecanismo analítico ou combinação destes, destinada a:
+Função informativa exercida por IA, assistente, auditor, mecanismo analítico ou combinação destes, destinada a analisar contexto, identificar riscos e lacunas, executar revisão adversarial, propor alternativas, verificar rastreabilidade, preparar contratos/evidências e alertar sobre reservas externas.
 
-- analisar contexto;
-- identificar riscos e lacunas;
-- executar revisão adversarial;
-- propor alternativas;
-- classificar materialidade de forma não vinculante;
-- verificar rastreabilidade;
-- preparar contratos, evidências e recomendações;
-- alertar sobre autoridade externa ou especializada possivelmente aplicável.
-
-A IG não possui autoridade de decisão, transição, aprovação, liberação ou execução por si mesma.
+A IG não possui autoridade decisória, de transição, aprovação, liberação ou execução por si mesma.
 
 ### 3.3 Agente de Execução — AE
 
 Agente, ferramenta, automação, pessoa executora ou combinação destes que realiza apenas ações expressamente autorizadas dentro de escopo identificável.
 
-O AE:
+O AE não infere autoridade, não amplia escopo, não transforma recomendação em ordem e deve produzir resultado e evidência de execução.
 
-- não infere autoridade;
-- não amplia escopo;
-- não transforma recomendação em ordem;
-- não executa além do contrato autorizado;
-- deve produzir resultado e evidência de execução;
-- deve parar diante de conflito material não resolvido ou comando fora do escopo.
+## 4. Poderes internos da ASP
 
-## 4. Autoridade Humana Soberana do Projeto
+Salvo reserva constitucional, legal, regulatória, contratual, profissional, científica ou externa aplicável, a ASP deve possuir **todos os poderes internos necessários à continuidade, evolução, contenção e encerramento do projeto**.
 
-O Evento de Constituição Inicial deverá instituir ou reconhecer a AHSP e designar seu titular humano.
+Esses poderes incluem, sem se limitar a:
 
-Salvo reserva explícita aplicável, a AHSP possui competência interna para decidir, autorizar, negar, suspender, retomar, revogar, substituir, conter ou liberar matérias do ciclo de vida do projeto, incluindo:
-
-- identidade e escopo do produto;
-- requisitos;
-- prioridades;
-- arquitetura do projeto;
-- semântica e significado operacional de dados quando não reservados a autoridade externa ou especializada;
-- seleção da fonte interna de verdade do projeto;
-- implementação;
-- mudança técnica;
-- migração reversível ou irreversível, observadas as reservas aplicáveis;
-- ativação;
-- desativação;
-- cutover;
-- rollback;
-- release;
-- suspensão operacional;
-- retomada operacional;
-- aceitação ou rejeição de risco interno;
-- decisões emergenciais;
-- contenção;
-- declaração de fora de escopo;
-- submissão externa quando a submissão em si não depender de autoridade externa distinta;
-- encerramento do projeto.
+- definir e alterar identidade, missão e escopo do projeto;
+- definir, alterar, aprovar, rejeitar ou retirar requisitos;
+- definir prioridades;
+- decidir arquitetura e evolução arquitetural;
+- definir semântica operacional interna quando não reservada externamente;
+- selecionar, substituir ou descontinuar fonte interna de verdade;
+- autorizar, negar, suspender ou revogar implementação;
+- autorizar, negar, suspender ou revogar mudança técnica;
+- autorizar, negar, suspender ou revogar migração;
+- autorizar, negar, suspender ou revogar ativação;
+- autorizar, negar, suspender ou revogar cutover;
+- autorizar, negar, suspender ou revogar release;
+- autorizar rollback;
+- suspender e retomar operação;
+- aceitar, rejeitar, conter ou transferir risco interno dentro de sua competência;
+- decidir emergências internas;
+- declarar escopo `OUT_OF_SCOPE`;
+- encerrar o projeto;
+- criar, alterar, fundir, suspender ou extinguir papéis subordinados internos;
+- designar, substituir, remover ou reconduzir titulares de papéis internos;
+- delegar competências internas total ou parcialmente;
+- revogar delegações;
+- autorizar subdelegação quando expressamente permitido;
+- designar substituto temporário;
+- designar sucessor;
+- criar mecanismos de continuidade e contingência de autoridade.
 
 A competência para decidir não equivale à decisão positiva.
 
 `AUTHORITY_TO_DECIDE != DECISION_TO_PROCEED`.
 
-A AHSP pode possuir autoridade de cutover enquanto o cutover permanece `PENDING`, `NO` ou `BLOCKED` por evidência insuficiente.
+## 5. Regra de fechamento de lacuna interna
 
-## 5. Regra de fechamento de lacuna interna de autoridade
+Nenhuma nova categoria de decisão interna poderá produzir vacância indefinida de autoridade.
 
-Nenhuma nova categoria de decisão **interna do projeto** poderá produzir vacância indefinida de autoridade.
+Se uma matéria interna relevante surgir e nenhuma função especializada possuir competência explicitamente vigente, a competência decisória interna retorna à ASP por regra de fechamento, desde que a matéria não esteja reservada por autoridade superior ou externa aplicável.
 
-Se uma matéria interna relevante surgir e nenhuma função especializada do projeto possuir competência explicitamente vigente para ela, a competência decisória interna retorna à AHSP por regra de fechamento, desde que a matéria não esteja reservada por:
+A regra de fechamento elimina vacância interna; não fabrica competência externa.
 
-1. Constituição ICFACTORY;
-2. autoridade normativa do próprio framework;
-3. legislação ou regulamentação aplicável;
-4. autoridade pública competente;
-5. obrigação contratual ou institucional vinculante;
-6. responsabilidade profissional legalmente reservada;
-7. autoridade científica, técnica ou de domínio que tenha sido classificada como obrigatória para a questão concreta;
-8. direito legítimo de terceiro.
+## 6. Delegação sem aprisionamento nominal
 
-A regra de fechamento elimina vacância interna; ela não fabrica competência externa.
+A ASP pode delegar poderes internos para uma ou mais funções ou pessoas, de modo permanente, temporário, condicionado ou por escopo.
 
-## 6. Regra HOLD / RELEASE
+Toda delegação deve declarar:
 
-A AHSP deve possuir poder explícito para colocar qualquer escopo interno do projeto em `HOLD` e para retirar o `HOLD` quando os critérios de liberação aplicáveis estiverem satisfeitos ou quando o risco for legitimamente aceito dentro de sua competência.
+- delegante;
+- delegado;
+- competência delegada;
+- escopo;
+- limites;
+- início de vigência;
+- condição de término ou duração;
+- possibilidade ou proibição de subdelegação;
+- poder de revogação;
+- efeitos sobre decisões em curso.
+
+Por padrão:
+
+- delegação não elimina a existência da ASP;
+- delegação não amplia a matéria além da competência original;
+- delegação é revogável, salvo instrumento válido que disponha diferentemente;
+- silêncio não cria subdelegação;
+- um titular pode acumular funções, desde que cada capacidade exercida permaneça identificável;
+- nenhuma função fica eternamente vinculada a um nome.
+
+## 7. Sucessão, substituição e vacância
+
+A estrutura deve permitir troca de pessoas sem reconstrução constitucional do projeto.
+
+A ASP pode designar:
+
+- sucessor;
+- substituto temporário;
+- autoridade em exercício;
+- cadeia de contingência;
+- condições objetivas de assunção.
+
+A mudança de titular não cria novo projeto, não reabre o Evento de Constituição Inicial e não exige reescrever toda a Constituição.
+
+Se houver vacância inesperada e nenhum sucessor válido estiver definido, a autoridade instituidora superior competente poderá designar novo titular da ASP por ato ordinário prospectivo, sem reutilizar o bootstrap originário e sem produzir retroatividade.
+
+## 8. Regra HOLD / RELEASE
+
+A autoridade competente para o escopo deve poder colocar qualquer matéria interna em `HOLD` e retirar o `HOLD` quando os critérios aplicáveis estiverem satisfeitos ou quando o risco puder ser legitimamente aceito dentro da competência correspondente.
 
 Estados mínimos:
 
@@ -127,58 +148,55 @@ Estados mínimos:
 
 `HOLD` não transfere autoridade para IA, auditor ou agente.
 
-`RELEASED` exige ato humano explícito da autoridade competente para o escopo.
+`RELEASED` exige ato humano explícito da autoridade competente.
 
-Quando houver reserva externa ou especializada obrigatória, a AHSP não pode liberar a matéria contrariando essa reserva; pode, porém, reduzir escopo, conter, retirar a funcionalidade, declarar `OUT_OF_SCOPE` ou manter o restante do projeto em evolução.
-
-## 7. Autoridade instituidora do Evento de Constituição Inicial
+## 9. Autoridade instituidora do Evento de Constituição Inicial
 
 A autoridade instituidora deve ser demonstrada por instrumento vigente anterior ao ato.
 
-Quando utilizada a Camada Soberana de Governança, sua competência permanece limitada à competência ordinária já constituída para sustentar formação e continuidade da cadeia de autoridade, instituir ou reconhecer funções subordinadas, definir competências e escopos e designar titulares.
+Quando utilizada a Camada Soberana de Governança, sua competência permanece limitada à competência ordinária já constituída para sustentar formação e continuidade da cadeia, instituir ou reconhecer funções subordinadas, definir competências e escopos e designar titulares.
 
 O Evento não converte a Camada Soberana em autoridade operacional automática do projeto.
 
-## 8. Efeitos permitidos do Evento de Constituição Inicial
+## 10. Efeitos permitidos do Evento de Constituição Inicial
 
 O Evento poderá:
 
 1. identificar inequivocamente o projeto;
-2. instituir ou reconhecer a AHSP;
-3. designar o titular humano da AHSP;
-4. instituir funções especializadas internas adicionais quando necessárias;
-5. definir competência, escopo, precedência e limites de cada função;
-6. instituir a IG como função informativa sem autoridade;
-7. instituir o AE como função executora sem autoridade decisória;
-8. identificar a primeira Constituição de Projeto candidata;
-9. estabelecer a proveniência prospectiva dos papéis constituídos;
+2. instituir a ASP como função humana institucional;
+3. designar seu titular inicial;
+4. definir poderes, limites e reservas da ASP;
+5. criar funções subordinadas adicionais;
+6. designar seus titulares;
+7. instituir IG e AE sem autoridade decisória própria;
+8. estabelecer mecanismo de delegação, sucessão e contingência;
+9. identificar a primeira Constituição de Projeto candidata;
 10. declarar a matriz inicial de autoridades reservadas;
-11. registrar a transição para governança ordinária do projeto.
+11. registrar a transição para governança ordinária.
 
-## 9. Constituição inicial e prevenção do loop de autovalidação
+## 11. Constituição inicial sem dependência obrigatória de terceiro nominal
 
-A Constituição inicial é caso de nascimento da cadeia e deve possuir disciplina própria, distinta da alteração constitucional ordinária posterior.
+A primeira Constituição não deve depender da disponibilidade permanente de uma segunda pessoa específica, auditor externo fixo ou titular nominal predeterminado para existir.
 
-A proposta permanente deverá, antes de promulgação, resolver explicitamente a incompatibilidade entre:
+A solução definitiva deve distinguir:
 
-- necessidade de uma primeira Constituição válida;
-- proibição ordinária de autovalidação de conteúdo de própria autoria;
-- ausência possível de segunda autoridade humana previamente constituída no nascimento do projeto.
+- **revisão/adversarialidade**, que pode ser produzida por IG, auditoria, agente, ferramenta ou humano sem adquirir autoridade;
+- **decisão constitucional**, que permanece humana e vinculada à função competente.
 
-Para o **primeiro ciclo constitucional apenas**, admite-se como hipótese normativa candidata uma **Ratificação Constitucional Inicial** pela AHSP após revisão adversarial documentada pela IG e verificação de compatibilidade com a Constituição ICFACTORY, desde que o ato fundador competente tenha constituído a AHSP para esse fim.
+Para o primeiro ciclo constitucional, a proposta candidata admite **Ratificação Constitucional Inicial pela ASP**, após revisão adversarial documentada e verificação explícita de compatibilidade com a Constituição ICFACTORY, quando o ato instituidor tiver conferido essa competência à ASP.
 
-Essa hipótese:
+Essa ratificação inicial:
 
-- não está vigente enquanto este candidato não for promulgado;
-- não se aplica retroativamente;
-- não vale para alterações constitucionais ordinárias posteriores;
+- não cria autoridade externa;
 - não transforma IA ou auditor em autoridade;
-- não dispensa evidência de compatibilidade constitucional;
-- não pode ser reutilizada após a primeira Constituição válida do projeto.
+- não se aplica retroativamente;
+- não exige auditor humano externo permanente como condição automática;
+- não impede revisão independente quando ela for útil, contratual, institucional ou externamente exigida;
+- não pode ser reutilizada para reinicializar a governança após a primeira Constituição válida.
 
-A promulgação definitiva deste protocolo deverá declarar expressamente se esta hipótese substitui, apenas no primeiro ciclo, a regra ordinária de autovalidação do template.
+Alterações constitucionais posteriores devem seguir o regime ordinário vigente aplicável, mas esse regime não deve criar dependência nominal perpétua nem bloquear a evolução por ausência de uma pessoa específica quando a própria governança puder designar outra autoridade competente.
 
-## 10. Autoridades externas e especializadas
+## 12. Autoridades externas e especializadas
 
 O ICFACTORY não cria autoridade legal, regulatória, científica, profissional ou pública por decisão interna.
 
@@ -187,21 +205,21 @@ Quando uma questão concreta depender de autoridade externa ou especializada obr
 - a reserva deve ser identificada;
 - o escopo bloqueado deve ser o menor possível;
 - o restante do projeto não deve ser bloqueado automaticamente;
-- a AHSP pode conter, retirar, reformular ou declarar a matéria `OUT_OF_SCOPE`;
+- a ASP pode conter, retirar, reformular ou declarar a matéria `OUT_OF_SCOPE`;
 - a ausência de validação obrigatória não deve ser convertida em paralisação global se houver isolamento seguro do escopo afetado.
 
-## 11. Armadilhas de contexto proibidas
+## 13. Armadilhas de contexto proibidas
 
-Nenhum projeto ICFACTORY poderá depender de contexto oculto para saber quem decide, quem executa ou o que está autorizado.
+Nenhum projeto poderá depender de contexto oculto para saber quem decide, quem executa ou o que está autorizado.
 
-São proibidas como fundamento decisório exclusivo:
+São proibidas como fundamento exclusivo:
 
 - memória de conversa;
 - nome informal de papel;
 - presença em reunião;
 - autoria de código;
-- posse do repositório;
-- commit Git isolado;
+- posse de repositório;
+- commit isolado;
 - implementação já realizada;
 - costume não documentado;
 - silêncio;
@@ -210,67 +228,35 @@ São proibidas como fundamento decisório exclusivo:
 - interpretação de agente;
 - frase ambígua sem escopo identificável.
 
-Todo ato material deve declarar pelo menos:
+Todo ato material deve declarar pelo menos autoridade humana, capacidade exercida, objeto, escopo, decisão, evidência considerada, condições/reservas, data de efeito e executor autorizado quando houver.
 
-- autoridade humana;
-- capacidade exercida;
-- objeto;
-- escopo;
-- decisão;
-- evidência considerada;
-- condições ou reservas;
-- data de efeito;
-- executor autorizado, quando houver;
-- critério de encerramento ou revisão quando aplicável.
+## 14. Prevenção de travamento por ambiguidade
 
-## 12. Prevenção de travamento por ambiguidade
+1. ambiguidade sobre autoridade interna é resolvida pela regra de fechamento da ASP;
+2. ambiguidade sobre autoridade externa gera contenção apenas do escopo afetado;
+3. ausência de contexto gera pedido de evidência ou decisão humana, não inferência;
+4. todo `BLOCKED` ou `HOLD` deve identificar causa, escopo, autoridade que pode resolver e condição de liberação;
+5. nenhuma auditoria cria autoridade ou bloqueio por opinião própria;
+6. nenhum agente cria novo gate por interpretação;
+7. nenhum projeto deve depender permanentemente de pessoa nominal específica quando a função puder ser regularmente reassumida, delegada ou sucedida.
 
-Ambiguidade não deve gerar expansão de autoridade nem bloqueio global automático.
+## 15. Continuidade de desenvolvimento
 
-Regras:
+Quando um escopo estiver bloqueado, atividades não dependentes desse bloqueio podem continuar, incluindo pesquisa, auditoria, testes, documentação, implementação isolada e não ativada quando autorizada, preparação de rollback e produção de evidência.
 
-1. ambiguidade sobre autoridade **interna** é resolvida pela regra de fechamento da AHSP;
-2. ambiguidade sobre autoridade **externa ou reservada** gera contenção apenas do escopo afetado até classificação;
-3. ausência de contexto suficiente gera pedido de evidência ou decisão humana, não inferência;
-4. um bloqueio deve identificar causa, escopo, autoridade competente para resolvê-lo e condição objetiva de liberação;
-5. nenhum `BLOCKED` ou `HOLD` pode existir sem um caminho de resolução documentado, salvo impedimento externo material não controlável pelo projeto;
-6. nenhuma auditoria pode criar bloqueio de autoridade por simples opinião; ela registra achado e encaminha à autoridade competente;
-7. nenhum agente pode criar um novo gate por interpretação própria.
+O bloqueio alcança somente atividades materialmente dependentes da decisão ou autoridade ausente/reservada.
 
-## 13. Continuidade de desenvolvimento
+## 16. Evolução sem reconstrução constitucional
 
-Governança deve controlar risco sem impedir evolução desnecessariamente.
+Mudança de arquitetura, tecnologia, SSoT, equipe, agente, titular, repositório, branch, nome, versão ou estratégia não exige novo Evento de Constituição Inicial quando houver continuidade material do mesmo projeto.
 
-Quando um escopo estiver bloqueado:
+A governança deve permitir evolução por decisões ordinárias, delegações, sucessões e alterações válidas, sem reiniciar a cadeia de autoridade.
 
-- pesquisa pode continuar;
-- auditoria pode continuar;
-- implementação isolada e não ativada pode continuar quando explicitamente autorizada;
-- testes podem continuar;
-- documentação pode continuar;
-- funções não afetadas podem continuar;
-- preparação de rollback pode continuar;
-- evidência necessária ao desbloqueio pode ser produzida.
+## 17. Consumação por projeto
 
-O bloqueio só alcança atividades que dependam materialmente da decisão ou autoridade ausente/reservada.
+Após a entrada em vigor da primeira Constituição válida, o Evento de Constituição Inicial considera-se consumado para aquela identidade material e não poderá ser usado para apagar ou reinicializar a governança.
 
-## 14. Evolução da própria arquitetura de projeto
-
-A Constituição inicial não deve congelar a arquitetura para sempre.
-
-A AHSP pode decidir evolução arquitetural, mudança de SSoT, substituição de componente, migração e reorganização interna por decisão material formal, preservando rastreabilidade, risco, rollback e autoridades reservadas aplicáveis.
-
-Mudança arquitetural não exige novo Evento de Constituição Inicial.
-
-## 15. Consumação por projeto
-
-Para cada identidade material de projeto, somente um Evento de Constituição Inicial poderá produzir efeito.
-
-Após a entrada em vigor da primeira Constituição válida, o Evento considera-se consumado e não poderá ser reutilizado para reinicializar, contornar ou apagar a governança ordinária.
-
-Mudança de nome, versão, branch, repositório, produto, titular ou arquitetura não reabre o Evento quando houver continuidade material do projeto.
-
-## 16. IA e agentes
+## 18. IA e agentes
 
 IA, agentes, Harnesses e ferramentas podem auxiliar na elaboração, auditoria, revisão adversarial, análise, recomendação, execução autorizada e produção de evidência.
 
@@ -280,34 +266,35 @@ Modelo operacional:
 
 `HUMAN_AUTHORITY_DECIDES -> GOVERNANCE_INTELLIGENCE_CHECKS/ADVISES -> EXECUTION_AGENT_EXECUTES -> EVIDENCE_RETURNS_TO_HUMAN_AUTHORITY`.
 
-O fluxo pode possuir iterações, mas a autoridade decisória humana permanece identificável.
+## 19. Gate adversarial obrigatório antes da promulgação do protocolo
 
-## 17. Gate adversarial obrigatório
-
-Antes de qualquer promulgação, a revisão adversarial deve tentar demonstrar pelo menos:
+Antes de qualquer promulgação deste protocolo, a revisão adversarial deve tentar demonstrar pelo menos:
 
 1. regressão infinita de autoridade;
 2. vacância futura de autoridade interna;
-3. possibilidade de autolegitimação ilimitada;
-4. reutilização indevida do BOOTSTRAP-01;
-5. conflito com SG-01, SG-02 ou SG-03;
-6. bypass de autoridade externa ou especializada;
-7. bloqueio global por questão local;
-8. `HOLD` sem caminho de resolução;
-9. `RELEASE` sem autoridade humana competente;
-10. contexto oculto necessário à aplicação;
-11. agente inferindo autoridade;
-12. IA adquirindo poder decisório por participação;
-13. arquitetura congelada por ausência de competência de evolução;
-14. impossibilidade de migração, ativação, cutover, rollback ou release por lacuna interna;
-15. impossibilidade de terceiro aplicar o protocolo a partir somente dos documentos canônicos.
+3. aprisionamento em pessoa nominal específica;
+4. impossibilidade de delegação ou sucessão;
+5. possibilidade de autolegitimação ilimitada;
+6. reutilização indevida do BOOTSTRAP-01;
+7. conflito com SG-01, SG-02 ou SG-03;
+8. bypass de autoridade externa;
+9. bloqueio global por questão local;
+10. `HOLD` sem caminho de resolução;
+11. `RELEASE` sem autoridade humana competente;
+12. contexto oculto necessário à aplicação;
+13. agente inferindo autoridade;
+14. IA adquirindo poder decisório;
+15. arquitetura congelada;
+16. impossibilidade de migração, ativação, cutover, rollback ou release por lacuna interna;
+17. impossibilidade de substituição do titular sem reconstrução constitucional;
+18. impossibilidade de terceiro aplicar o protocolo apenas pelos documentos canônicos.
 
-Falha material em qualquer item bloqueia promulgação.
+Falha material em qualquer item bloqueia a promulgação do **protocolo**, não a continuidade automática de todo projeto não afetado.
 
-## 18. Regra de incorporação
+## 20. Regra de incorporação
 
 Este documento permanece candidato e não altera, por sua simples existência, `CONSTITUTION.md`, `PROJECT_CONSTITUTION_TEMPLATE.md`, `CONSTITUTIONAL_LEXICON.md`, BOOTSTRAP-01 ou qualquer Constituição de Projeto.
 
-A incorporação definitiva exige processo normativo competente, revisão/gates aplicáveis, decisão expressa da autoridade metodológica competente e atualização rastreável dos documentos afetados.
+A incorporação definitiva exige processo normativo competente, decisão expressa da autoridade metodológica competente e atualização rastreável dos documentos afetados.
 
 Nenhum projeto, inclusive o Sistema de Monitoramento de Águas, recebe autoridade nova enquanto esta proposta não adquirir vigência.
