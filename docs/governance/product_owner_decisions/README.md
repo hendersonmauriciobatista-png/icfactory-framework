@@ -31,7 +31,7 @@ This package specializes those authorities for Product Owner decisions. It does 
 
 ## Package map
 
-- [`CANDIDATE_MANIFEST.md`](CANDIDATE_MANIFEST.md): candidate identity and non-effect.
+- [`CANDIDATE_MANIFEST.md`](CANDIDATE_MANIFEST.md): normative package identity, acceptance/promulgation state and historical candidate lineage.
 - [`POLICY.md`](POLICY.md): `PO-GOV-01` policy.
 - [`SCHEMA.md`](SCHEMA.md): modular contract, restricted YAML, monotonic lineages, event-sourced opinions, structured containment, authority-free grouping and complete candidate fixtures.
 - [`LIFECYCLE.md`](LIFECYCLE.md): states and transitions.
@@ -42,6 +42,6 @@ This package specializes those authorities for Product Owner decisions. It does 
 - [`templates/`](templates/): proportional D1-D3 and derivation templates.
 - [`automation/AUTOMATION_CONTRACT.md`](automation/AUTOMATION_CONTRACT.md): non-executable future automation boundary.
 
-## Candidate restriction
+## Project derivation
 
-Projects must not derive or claim adoption of this release candidate. No concrete project decision belongs in the framework repository. Future acceptance and promulgation require separate explicit Methodological Custody acts.
+The promulgated `PO-GOV 1.0.0` package may be adopted prospectively by a project only through the explicit, version-pinned project adoption process defined in [`DERIVATION_STANDARD.md`](DERIVATION_STANDARD.md). Framework promulgation does not itself adopt PO-GOV into any project and does not create concrete project decisions.
