@@ -205,6 +205,22 @@ A Discovery deverá ser aplicada em projetos distintos para verificar sua capaci
 
 CANDIDATA — RESEARCH
 
+## Identidade Experimental
+
+DISCOVERY_ID::DA-03
+
+PROVISIONAL_ID::GAB-R01
+
+VERSION::0.1
+
+LAYER::RESEARCH
+
+MATURITY::CANDIDATE
+
+NORMATIVE::NO
+
+PROMOTION::NO
+
 ---
 
 ## Sigla
@@ -217,19 +233,45 @@ Fronteira Arquitetural Governada.
 
 ---
 
-## Origem
+## Origem E Proveniência
 
-Projeto:
+Projeto de origem:
 
 Sistema de Monitoramento de Águas
+
+Domínio de aplicação:
+
+Monitoramento e avaliação governada de qualidade da água.
+
+Contexto operacional:
+
+Auditoria arquitetural da fronteira semântica entre o catálogo hídrico e o Governed Core.
 
 Módulo de origem:
 
 CORE_11 — Semantic Boundary
 
+Motivação:
+
+Impedir que diferenças de identificador, linguagem, unidade, versão ou contexto sejam silenciosamente tratadas como equivalência semântica válida entre subsistemas.
+
+Data do registro inicial:
+
+2026-09-07
+
+Autor(es):
+
+Henderson Mauricio Batista — projeto e decisão de pesquisa.
+
+ChatGPT / Alfred — apoio à auditoria, formulação e consolidação da hipótese sob governança do projeto.
+
 Categoria:
 
 Descoberta Arquitetural
+
+Estado atual:
+
+CANDIDATA — RESEARCH
 
 ---
 
@@ -285,6 +327,53 @@ Uma Governed Architectural Boundary (GAB) pode reduzir acoplamento e ambiguidade
 
 ---
 
+## Contrato Experimental GAB-R01 v0.1
+
+Contrato mínimo candidato:
+
+```text
+GAB_BINDING
+concept_id
+source_namespace
+source_reference
+target_namespace
+target_reference
+semantic_version
+canonical_unit_reference
+equivalence_status
+resolution_evidence
+```
+
+`resolution_evidence` deve permitir reconstruir por que uma travessia foi resolvida, bloqueada ou classificada como incompatível.
+
+Regra central candidata:
+
+```text
+DEFAULT::DO_NOT_CROSS
+
+CROSS_BOUNDARY
+IFF
+POSITIVE_GOVERNED_EVIDENCE
+DEMONSTRATES_COMPATIBILITY
+```
+
+Capacidade de tradução não constitui autoridade para declarar equivalência.
+
+---
+
+## Estados De Resolução Candidatos
+
+GAB-R01 v0.1 reconhece os seguintes estados experimentais:
+
+* `RESOLVED` — vínculo explícito e compatibilidade demonstrada;
+* `UNRESOLVED` — referências candidatas existem, mas a compatibilidade/equivalência não foi demonstrada;
+* `NOT_MAPPED` — referência de origem conhecida sem contraparte governada registrada;
+* `UNKNOWN_REFERENCE` — entrada não reconhecida como referência ou alias governado;
+* `AMBIGUOUS` — mais de um vínculo plausível sem desambiguação explícita;
+* `INCOMPATIBLE` — incompatibilidade demonstrada entre elementos necessários à travessia.
+
+---
+
 ## Princípios Candidatos
 
 GAB-01 — EXPLICIT_CONTEXT
@@ -317,6 +406,63 @@ A fronteira deve reduzir propagação desnecessária de mudanças entre os compo
 
 ---
 
+## Invariantes Candidatos Consolidados
+
+GAB-I01 — Similaridade de referência ou linguagem não demonstra equivalência governada.
+
+GAB-I02 — Equivalência exige vínculo canônico explícito.
+
+GAB-I03 — Existência semântica não implica pertencimento governado.
+
+GAB-I04 — Compatibilidade numérica exige compatibilidade semântica e de unidade.
+
+GAB-I05 — Compatibilidade desconhecida não equivale a incompatibilidade comprovada.
+
+GAB-I06 — Estabilidade do identificador não demonstra estabilidade semântica.
+
+GAB-I07 — Mudança semântica material exige nova versão semântica.
+
+GAB-I08 — Registros históricos devem preservar o vínculo semântico original.
+
+GAB-I09 — Aliases exigem vínculo canônico explícito.
+
+GAB-I10 — Múltiplos vínculos plausíveis exigem desambiguação explícita.
+
+GAB-I11 — Contexto pode apoiar interpretação, mas não cria autoridade semântica.
+
+GAB-I12 — `RESOLVED` exige evidência governada positiva.
+
+---
+
+## Responsabilidades E Proibições Candidatas
+
+A GAB pode, experimentalmente:
+
+* identificar contexto;
+* reconhecer referências;
+* resolver bindings explícitos;
+* verificar versão semântica;
+* verificar compatibilidade de unidade;
+* detectar ambiguidade;
+* operar fail-safe;
+* produzir evidência de resolução.
+
+A GAB não pode:
+
+* criar autoridade;
+* inventar equivalência;
+* inferir alias como vínculo governado;
+* selecionar equivalência por probabilidade;
+* criar conceito automaticamente;
+* adicionar membro à APS automaticamente;
+* duplicar o catálogo como nova fonte de verdade;
+* definir thresholds;
+* executar regras;
+* decidir conformidade;
+* tomar decisão operacional.
+
+---
+
 ## Aplicação Inicial — Semantic Boundary
 
 No Sistema de Monitoramento de Águas, a primeira aplicação candidata da GAB é a Semantic Boundary entre o catálogo hídrico e o Governed Core.
@@ -330,6 +476,40 @@ Exemplo de problema:
 A GAB não pode inferir equivalência apenas pela semelhança dos identificadores. A equivalência deverá depender de vínculo semântico explícito e governado.
 
 A Semantic Boundary é uma aplicação de pesquisa da GAB; não constitui implementação autorizada nem promoção da GAB ao núcleo normativo do ICFACTORY.
+
+---
+
+## Evidência De Validação — CORE_11
+
+Em 2026-09-07, o contrato GAB-R01 v0.1 foi submetido a uma rodada controlada de validação adversarial no CORE_11 do Sistema de Monitoramento de Águas.
+
+Dez vetores arquiteturais foram avaliados:
+
+1. `ph ↔ PH` — `UNRESOLVED`;
+2. `turbidez ↔ TURBIDITY` — `UNRESOLVED`;
+3. `oxigenio_dissolvido ↔ DISSOLVED_OXYGEN` — `UNRESOLVED`;
+4. `temperatura_agua ↔ ausência de referência governada` — `NOT_MAPPED`;
+5. compatibilidade de unidade não demonstrada — `UNRESOLVED`;
+6. mudança semântica sem versionamento demonstrado — `UNRESOLVED`;
+7. alias desconhecido — `UNKNOWN_REFERENCE`;
+8. equivalência ambígua — `AMBIGUOUS`;
+9. binding explícito válido, em vetor arquitetural controlado — `RESOLVED`;
+10. incompatibilidade de unidade comprovada, em vetor arquitetural controlado — `INCOMPATIBLE`.
+
+Resultado da rodada:
+
+```text
+TESTS_EXECUTED::10
+EXPECTED_BEHAVIOR_PASS::10
+RESOLUTION_STATES_COVERED::6/6
+FAIL_SAFE_MODEL::SUPPORTED
+POSITIVE_RESOLUTION_MODEL::SUPPORTED_BY_CONTROLLED_VECTOR
+NEGATIVE_RESOLUTION_MODEL::SUPPORTED_BY_CONTROLLED_VECTOR
+```
+
+Os testes 09 e 10 são vetores arquiteturais controlados; não constituem prova de implementação desses comportamentos no software atual.
+
+A rodada sustenta o contrato experimental e o fechamento arquitetural do CORE_11, mas não demonstra reutilização da GAB em projeto independente.
 
 ---
 
@@ -374,7 +554,7 @@ A Discovery deverá ser testada em múltiplas fronteiras e projetos para avaliar
 
 ✔ Sistema de Monitoramento de Águas — Semantic Boundary — hipótese arquitetural identificada
 
-⬜ Auditoria adversarial da Semantic Boundary
+✔ Auditoria adversarial da Semantic Boundary — 10 vetores controlados, 6 estados de resolução cobertos
 
 ⬜ Segunda fronteira no Sistema de Monitoramento de Águas
 
@@ -395,6 +575,8 @@ NORMATIVE::NO
 PROMOTION::NO
 
 IMPLEMENTATION_AUTHORIZED::NO
+
+A validação adversarial no projeto de origem não altera automaticamente o estado oficial para `EM VALIDAÇÃO`, pois o Discovery Lifecycle exige justificativa documental para mudança de estado e validação em contextos/projetos distintos antes das etapas posteriores.
 
 A existência deste registro não autoriza alteração de arquitetura, implementação, migração ou cutover em qualquer projeto.
 
@@ -422,7 +604,7 @@ DA-01 permanece registrada como Discovery Arquitetural CANDIDATA.
 
 DA-02 permanece registrada como Discovery Arquitetural CANDIDATA.
 
-DA-03 — GAB permanece registrada como Discovery Arquitetural CANDIDATA — RESEARCH.
+DA-03 — GAB / GAB-R01 v0.1 permanece registrada como Discovery Arquitetural CANDIDATA — RESEARCH.
 
 Nao ha promocao automatica ao nucleo arquitetural oficial do ICFACTORY.
 
