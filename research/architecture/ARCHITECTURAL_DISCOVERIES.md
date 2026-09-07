@@ -199,6 +199,207 @@ A Discovery deverá ser aplicada em projetos distintos para verificar sua capaci
 
 ---
 
+# DA-03 — GAB — Governed Architectural Boundary
+
+## Estado
+
+CANDIDATA — RESEARCH
+
+---
+
+## Sigla
+
+GAB — Governed Architectural Boundary
+
+Tradução operacional:
+
+Fronteira Arquitetural Governada.
+
+---
+
+## Origem
+
+Projeto:
+
+Sistema de Monitoramento de Águas
+
+Módulo de origem:
+
+CORE_11 — Semantic Boundary
+
+Categoria:
+
+Descoberta Arquitetural
+
+---
+
+## Problema Observado
+
+Durante a auditoria semântica do Sistema de Monitoramento de Águas verificou-se que subsistemas distintos utilizavam referências diferentes para conceitos potencialmente equivalentes, por exemplo `ph` no catálogo hídrico e `PH` no Governed Core.
+
+A existência de identificadores, metadados e autorização de referência não demonstrava, por si só, identidade ou equivalência semântica entre os modelos.
+
+Também se verificou que o ICFACTORY possuía princípios de separação de responsabilidades, governança, auditoria e interfaces, mas não foi localizado um processo geral específico para formalização de fronteiras arquiteturais entre modelos com semânticas distintas.
+
+---
+
+## Pesquisa Externa De Apoio
+
+A pesquisa externa autorizada examinou conceitos consolidados de arquitetura e Domain-Driven Design, especialmente:
+
+* Bounded Context;
+* Anti-Corruption Layer (ACL);
+* Context Map;
+* Ports and Adapters / Hexagonal Architecture.
+
+Fontes principais consultadas:
+
+* Microsoft Azure Architecture Center — Anti-Corruption Layer pattern: https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer
+* AWS Prescriptive Guidance — Anti-corruption layer pattern: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/acl.html
+
+As fontes descrevem a Anti-Corruption Layer como mecanismo de mediação/tradução entre subsistemas ou bounded contexts que possuem semânticas distintas, preservando o modelo interno e concentrando a tradução na fronteira.
+
+O ICFACTORY não adota automaticamente esses padrões. Eles constituem fundamentação externa para investigação e adaptação governada.
+
+---
+
+## Descoberta
+
+Uma fronteira arquitetural entre modelos, módulos ou contextos não deve ser tratada apenas como interface técnica.
+
+Quando existe diferença de identidade, linguagem, semântica, autoridade ou representação, a fronteira deve possuir contrato explícito, tradução controlada, isolamento de responsabilidades, comportamento fail-safe e evidência observável da resolução realizada.
+
+---
+
+## Hipótese Arquitetural
+
+Uma Governed Architectural Boundary (GAB) pode reduzir acoplamento e ambiguidade entre componentes ao tornar explícitos:
+
+* os contextos e namespaces envolvidos;
+* os objetos autorizados a atravessar a fronteira;
+* as transformações ou equivalências permitidas;
+* as responsabilidades proibidas na fronteira;
+* os estados de resolução e falha;
+* a versão aplicável do contrato;
+* a evidência da tradução ou resolução efetuada.
+
+---
+
+## Princípios Candidatos
+
+GAB-01 — EXPLICIT_CONTEXT
+
+Toda fronteira deve identificar os contextos, modelos ou namespaces que conecta.
+
+GAB-02 — EXPLICIT_CONTRACT
+
+Somente informações previstas no contrato podem atravessar a fronteira.
+
+GAB-03 — CONTROLLED_TRANSLATION
+
+Traduções e equivalências entre modelos devem ser explícitas e rastreáveis; similaridade textual não demonstra equivalência.
+
+GAB-04 — RESPONSIBILITY_ISOLATION
+
+A fronteira não deve absorver regras de negócio, autoridade ou decisões que pertencem aos componentes conectados.
+
+GAB-05 — FAIL_SAFE
+
+Tradução desconhecida, incompatível ou ambígua não pode ser promovida silenciosamente a equivalência válida.
+
+GAB-06 — OBSERVABLE_RESOLUTION
+
+A resolução realizada na fronteira deve produzir evidência suficiente para auditoria e diagnóstico.
+
+GAB-07 — INDEPENDENT_EVOLUTION
+
+A fronteira deve reduzir propagação desnecessária de mudanças entre os componentes conectados.
+
+---
+
+## Aplicação Inicial — Semantic Boundary
+
+No Sistema de Monitoramento de Águas, a primeira aplicação candidata da GAB é a Semantic Boundary entre o catálogo hídrico e o Governed Core.
+
+Exemplo de problema:
+
+`ph` → catálogo hídrico
+
+`PH` → Governed Core
+
+A GAB não pode inferir equivalência apenas pela semelhança dos identificadores. A equivalência deverá depender de vínculo semântico explícito e governado.
+
+A Semantic Boundary é uma aplicação de pesquisa da GAB; não constitui implementação autorizada nem promoção da GAB ao núcleo normativo do ICFACTORY.
+
+---
+
+## Relação Com Conhecimento Externo
+
+A GAB possui convergência conceitual com Anti-Corruption Layer e Bounded Context, porém adiciona como hipótese de pesquisa do ICFACTORY ênfase explícita em:
+
+* governança da fronteira;
+* autoridade;
+* evidência;
+* rastreabilidade;
+* fail-safe;
+* versionamento do contrato;
+* separação entre capacidade de tradução e permissão para reconhecer equivalência.
+
+Portanto:
+
+`GAB != ACL`
+
+`GAB != BOUNDED_CONTEXT`
+
+`GAB != PORT_OR_ADAPTER`
+
+Esses conceitos externos são referências de pesquisa, não sinônimos nem autoridade normativa do ICFACTORY.
+
+---
+
+## Critérios De Validação
+
+A Discovery deverá ser testada em múltiplas fronteiras e projetos para avaliar se:
+
+1. reduz ambiguidade entre modelos;
+2. impede vazamento indevido de responsabilidades;
+3. preserva autoridade e rastreabilidade;
+4. produz comportamento fail-safe em traduções não demonstradas;
+5. permite evolução independente dos componentes;
+6. é reutilizável além do caso semântico do Sistema de Monitoramento de Águas.
+
+---
+
+## Próximas Validações
+
+✔ Sistema de Monitoramento de Águas — Semantic Boundary — hipótese arquitetural identificada
+
+⬜ Auditoria adversarial da Semantic Boundary
+
+⬜ Segunda fronteira no Sistema de Monitoramento de Águas
+
+⬜ Sistema de Gestão para Autoescola
+
+⬜ Outro projeto ICFACTORY independente
+
+---
+
+## Autoridade E Maturidade
+
+LAYER::RESEARCH
+
+MATURITY::CANDIDATE
+
+NORMATIVE::NO
+
+PROMOTION::NO
+
+IMPLEMENTATION_AUTHORIZED::NO
+
+A existência deste registro não autoriza alteração de arquitetura, implementação, migração ou cutover em qualquer projeto.
+
+---
+
 # Observações Gerais
 
 As Discoveries registradas neste documento representam hipóteses arquiteturais produzidas durante o desenvolvimento de projetos reais.
@@ -221,6 +422,8 @@ DA-01 permanece registrada como Discovery Arquitetural CANDIDATA.
 
 DA-02 permanece registrada como Discovery Arquitetural CANDIDATA.
 
+DA-03 — GAB permanece registrada como Discovery Arquitetural CANDIDATA — RESEARCH.
+
 Nao ha promocao automatica ao nucleo arquitetural oficial do ICFACTORY.
 
-A GP-R01 apenas institucionaliza a camada Research e preserva DA-01 e DA-02 como hipoteses arquiteturais em investigacao.
+A GP-R01 apenas institucionaliza a camada Research e preserva DA-01, DA-02 e DA-03 como hipoteses arquiteturais em investigacao.
